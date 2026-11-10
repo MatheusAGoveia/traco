@@ -4,6 +4,7 @@ Editor de marcenaria em português, sem backend. HTML, CSS e módulos JavaScript
 
 ## Uso
 
+- Na primeira visita, o editor abre um projeto vazio, sem quarto ou móveis prontos.
 - Desenhe linhas para criar chapas, ou retângulos para criar painéis.
 - Ajuste dimensões, posição e rotação de cada peça em milímetros.
 - Alterne entre Frente, Superior e Lateral; acompanhe o modelo 3D.
@@ -44,6 +45,6 @@ Na raiz do repositório, inicie o servidor com Python 3.
 python3 -m http.server 8000 --directory dist
 ```
 
-Acesse `http://localhost:8000` e clique em **Meu quarto**. Para importar a cópia do projeto com o closet e os móveis posicionados, clique em **Abrir** e selecione [`projetos/Quarto_Samuel_Traco.json`](projetos/Quarto_Samuel_Traco.json).
+Acesse `http://localhost:8000`. Comece a desenhar ou clique em **Planejar quarto** para criar um ambiente. Para importar um projeto próprio, clique em **Abrir** e selecione um arquivo JSON do seu dispositivo. Arquivos pessoais não são incluídos na publicação.
 
-Para executar os testes de geometria com Node.js 20 ou superior, use `node --test tests/geometry.test.js`.
+Para executar os testes de geometria com Node.js 20 ou superior, use `node --test`.
